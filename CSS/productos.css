@@ -1,0 +1,286 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 400;
+}
+
+
+/*============ HEADER E ICONOS DE REDES ===============*/
+
+.header{
+    width: 100%; /*para que ocupe el 100% del largo de la pagina*/
+    height: 0; /*altura del contenedor header*/
+    display: grid; /*poniendo display grid le decimos que divida todos los contenedores dentro del header en filas*/
+    grid-template-rows: 1fr 1fr; /*divide el contenido en las filas que necesitemos en este caso se dividio en 
+    2 fracmentos 1fr 1fr asi queda el contenido en 2 filas*/
+
+}
+
+
+
+.social{
+    background-color: black;
+    width: 100%;
+    height: 130%;
+    display: grid;
+    max-width: 1366px;
+}
+
+.social-icons{
+    width: 250px; /*ocupa 250px del contenedor padre que es el contenedor social*/
+    height: auto;
+    display: flex;
+    align-items: center; /*pone los iconos en el centro del contenedor al lado izquierdo*/
+    justify-content: space-between; /*hace que los iconos ocupen el total del contenedor social-icons*/
+    justify-self: end; /* envia el contenedor social-icons hacia la derecha del conteneodr padre*/
+    margin-right: 50px; /*pone un margen hacia la derecha de 50px a cada uno de los iconos*/
+
+}
+
+
+.social-icons a{
+    color: white; /*cambia el color de los iconos*/
+    font-size: 28px; /*agranda el tamaño de los iconos*/
+}
+
+.social-icons a:hover{
+    color: rgba(7, 138, 114, 0.757); /*color de iconos al hacer hover*/
+    
+}
+
+/* LOGO Y BOTON TIPS*/
+
+.nav{
+    display: grid; /*divide en filas los dos contenedores hijos*/
+    grid-template-columns: 1fr 1fr; /*divide los 2 contenedores hijos en 2 fracciones*/
+    height: 0px; /*alto del contenedor padre nav*/
+}
+
+.nav-logo{
+    margin-top: 20px; /*pone un margen hacia arriba del contenedor hijo de 10px*/
+    display: flex;
+    align-items: center; /*pone el logo en el centro del contenedor*/
+    margin-left: 50px; /*margen de izquierda del logo*/
+    
+}
+
+.nav-link{
+    display: flex;
+    align-items: center; /*pone el contenido en a la izquierda en el centro del contenedor*/
+    justify-content: flex-end; /*envia el contenido a la derecha del contenedor*/
+    margin-right: 50px; /*pone un margen de 50px hacia la derecha*/
+}
+
+
+/*===BOTON TIPS===*/
+.nav-link input{
+    margin: 20px;
+    width: 100px;
+    height: 45px;
+    border-radius: 45px;
+    cursor: pointer;
+    border: 1px solid rgba(7, 138, 114, 0.387);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0 , 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+.nav-link input:hover{
+    background: rgba(7, 138, 114, 0.757);
+    transform: translateY(-7px);
+    color: #fff;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.445);
+}
+
+
+
+/*=========== SECCION PROMO ===========*/
+
+
+.productos-main{
+    display: grid;
+    width: 100%; /*ocupa el total del ancho de la pagina*/
+    margin-top: 185px; /*espacio entre el contenedor principal productos-main y el principo de la pagina*/
+}
+
+.promo{
+    background-color: rgba(255, 255, 255, 0.757); 
+    padding: 10px 0px 40px;
+    
+}
+
+.promo-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*divide el contenedor en 2 columnas la primera mas grande que la otra ya que contiene 2fr*/
+    grid-template-rows: 2fr; /*divide el contenedor en 2 filas*/
+    
+}
+
+.promo h1{
+    
+    text-align: center; /*centra el titulo en la mitad de cu contenedor*/
+    font-size: 35px;
+    border-bottom: 2px solid rgb(145, 145, 145);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+
+.promo-content img{
+    grid-column: 1;/*envia la imagen a la columna 1*/
+    width: 85%; /*ocupa el 85% del contenedor promo-content*/
+    display: inline-block;
+    margin: 0px 10px 0px 80px; /*le pone margen arriba y abajo de 30px y de 0 a los lados*/
+}
+
+.promo-info{
+    grid-column: 2;/*pone el contenido del contenedor promo-info en la columna 2 del contenedor promo-content*/
+    margin: 0px 50px 0px 0px;
+}
+
+.promo-info h2{
+    margin-top: 20px; /*muve el titulo del contenedor promo-info hacia 
+    abajo poniendole un margen de 20px arriba*/
+    text-align: center;
+   
+
+}
+
+.promo-info ul{
+    margin: 30px 0px 30px 110px;;/*espacio de margen de la lista con respecto a su contenedor */
+
+    
+}
+
+
+/*===============BOTON DE COMPRAR======================*/
+
+
+
+.btn{
+    display: flex;
+    justify-content: center; /*pone el boton en el centro de su contendor*/
+}
+
+.btn button{
+    left: 130px;
+    margin: 10px 0 10px;
+    width: 120px;
+    height: 45px;
+    border-radius: 45px;
+    cursor: pointer;
+    border: 1px solid rgba(7, 138, 114, 0.387);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0 , 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: black;
+}
+
+
+.btn button:hover{
+    background: rgba(7, 138, 114, 0.757);
+    transform: translateY(-7px);
+    color: #fff;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.445);
+} 
+
+
+
+
+/*======SECCION PRODUCTOS========*/
+
+.products{
+    padding: 20px 80px 40px; /*espacio entre la palabra productos y el contenedor productos
+    20px arriba 80px a los lados y 40 px abajo */
+}
+
+.products h2{
+    text-align: center;
+    border-bottom: 2px solid rgb(145, 145, 145);
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 35px;
+   
+}
+
+.porductos-tarjets {
+    float: left;
+    margin-bottom: 10px;
+  
+    
+}
+
+.productos-card{
+    margin: 50px 20px 10px;
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    background-color: #333;
+    border-radius: 10px;
+    outline: 1px solid rgba(255, 255, 255, .5);
+    outline-offset: -8px;
+    box-shadow: 3px 3px 10px rgba(0, 0 , 0, .1);
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.card-img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+    opacity: .6;
+    transition: transform .75s;
+    
+}
+.productos-card:hover .card-img{
+    transform: scale(1.15);
+}
+
+.card-title{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-size: 20px;
+    text-shadow: 0 0 1px rgba(0, 0 , 0, .5);
+    color: #fff;
+}
+
+
+
+
+/*=============FOOTER==================*/
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+footer p{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+
+

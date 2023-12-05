@@ -1,0 +1,195 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 400;
+}
+
+
+/*============ HEADER E ICONOS DE REDES ===============*/
+
+.header{
+    width: 100%; /*para que ocupe el 100% del largo de la pagina*/
+    height: 0; /*altura del contenedor header*/
+    display: grid; /*poniendo display grid le decimos que divida todos los contenedores dentro del header en filas*/
+    grid-template-rows: 1fr 1fr; /*divide el contenido en las filas que necesitemos en este caso se dividio en 
+    2 fracmentos 1fr 1fr asi queda el contenido en 2 filas*/
+
+}
+
+
+
+.social{
+    background-color: black;
+    width: 100%;
+    height: 130%;
+    display: grid;
+    max-width: 1366px;
+}
+
+.social-icons{
+    width: 250px; /*ocupa 250px del contenedor padre que es el contenedor social*/
+    height: auto;
+    display: flex;
+    align-items: center; /*pone los iconos en el centro del contenedor al lado izquierdo*/
+    justify-content: space-between; /*hace que los iconos ocupen el total del contenedor social-icons*/
+    justify-self: end; /* envia el contenedor social-icons hacia la derecha del conteneodr padre*/
+    margin-right: 50px; /*pone un margen hacia la derecha de 50px a cada uno de los iconos*/
+
+}
+
+
+.social-icons a{
+    color: white; /*cambia el color de los iconos*/
+    font-size: 28px; /*agranda el tamaño de los iconos*/
+}
+
+.social-icons a:hover{
+    color: rgba(7, 138, 114, 0.757); /*color de iconos al hacer hover*/
+    
+}
+
+/* LOGO Y BOTON PRODUCTOS*/
+
+.nav{
+    display: grid; /*divide en filas los dos contenedores hijos*/
+    grid-template-columns: 1fr 1fr; /*divide los 2 contenedores hijos en 2 fracciones*/
+    height: 0px; /*alto del contenedor padre nav*/
+}
+
+.nav-logo{
+    margin-top: 20px; /*pone un margen hacia arriba del contenedor hijo de 10px*/
+    display: flex;
+    align-items: center; /*pone el logo en el centro del contenedor*/
+    margin-left: 50px; /*margen de izquierda del logo*/
+    
+}
+
+.nav-link{
+    display: flex;
+    align-items: center; /*pone el contenido en a la izquierda en el centro del contenedor*/
+    justify-content: flex-end; /*envia el contenido a la derecha del contenedor*/
+    margin-right: 50px; /*pone un margen de 50px hacia la derecha*/
+}
+
+/*===BOTON PRODUCTOS===*/
+.nav-link input{
+    margin: 20px;
+    width: 150px;
+    height: 45px;
+    border-radius: 45px;
+    cursor: pointer;
+    border: 1px solid rgba(7, 138, 114, 0.387);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0 , 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+.nav-link input:hover{
+    background: rgba(7, 138, 114, 0.757);
+    transform: translateY(-7px);
+    color: #fff;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.445);
+}
+
+
+/*==========SECCION TIPS===========*/
+
+
+/*contenedor principal tips*/
+.tips-main{
+    background-color: rgb(255, 255, 255);
+    margin: 185px 0px 0px ;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    justify-content: center;
+}
+
+.tips-content h1{
+    text-align: center;
+    border-bottom: 2px solid rgb(145, 145, 145);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/*=============TARJETAS IMAGENES PARA TIPS==================*/
+
+
+.tips-tarjets {
+    float: left;
+    margin-bottom: 10px;
+       
+}
+
+.tips-card{
+    margin: 10px 50px 10px 10PX;
+    display: inline-block;
+    width: 1000PX;
+    height: 350px;
+    background-color: #333;
+    border-radius: 10px;
+    outline: 1px solid rgba(255, 255, 255, .5);
+    outline-offset: -8px;
+    box-shadow: 3px 3px 10px rgba(0, 0 , 0, .1);
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.card-img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+    opacity: .6;
+    transition: transform .75s;
+    
+}
+.tips-card:hover .card-img{
+    transform: scale(1.15);
+}
+
+.card-title{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-size: 20px;
+    text-shadow: 0 0 1px rgba(0, 0 , 0, .5);
+    color: #fff;
+}
+
+
+/*=============FOOTER==================*/
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+footer p{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+
+
+
+
