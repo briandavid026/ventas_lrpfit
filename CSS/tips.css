@@ -191,5 +191,78 @@ footer p{
 }
 
 
+/* Ajustes para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Ajustes para dispositivos más pequeños */
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .social{
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .social-icons a {
+        font-size: 20px;
+    }
+}
 
 
+@media screen and (max-width: 576px) {
+    .nav-link input{
+        margin: 100px;
+        width: 12   0px;
+        font-size: 10px;
+        
+    }
+}   
+
+
+@media screen and (max-width: 576px) {
+    .tips-content h1{
+        text-align: center;
+        border-bottom: 2px solid rgb(145, 145, 145);
+        padding: 30px;
+        margin-bottom: 20px;
+    
+    }
+}    
+
+@media screen and (max-width: 576px) {
+    .tips-card{
+        margin: 10px 0px 10px 10PX;
+        display: inline-block;
+        width: 400PX;
+        height: 200px;
+        background-color: #333;
+        border-radius: 10px;
+        outline: 1px solid rgba(255, 255, 255, .5);
+        outline-offset: -8px;
+        box-shadow: 3px 3px 10px rgba(0, 0 , 0, .1);
+        position:relative;
+        overflow: hidden;
+        
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card-title{
+        position: absolute;
+        left: 30px;
+        bottom: 15px;
+        font-size: 20px;
+        text-shadow: 0 0 1px rgba(0, 0 , 0, .5);
+        color: #fff;
+    }
+}

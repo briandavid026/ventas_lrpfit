@@ -35,7 +35,7 @@ body{
     background-color: black;
     width: 100%;
     height: 130%;
-    display: grid;
+    display: grid;  
     max-width: 1366px;
 }
 
@@ -87,7 +87,7 @@ body{
 
 /*===BOTON TIPS===*/
 .nav-link input{
-    margin: 20px;
+    margin: 30px;
     width: 100px;
     height: 45px;
     border-radius: 45px;
@@ -136,7 +136,7 @@ body{
     font-weight: bold; /*pone el texto en negrita*/
     letter-spacing: 2px; /*espacio entre cada letra del texto*/
     color: rgb(255, 255, 255);
-    margin-top: 95PX; /*margen espacio entre el texto y el contenedor main*/
+    margin-top: 95px; /*margen espacio entre el texto y el contenedor main*/
     text-shadow: 4px 3px black; /*pone sombra al texto*/
 }
 
@@ -163,5 +163,43 @@ body{
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.445);
 }
 
+@media screen and (max-width: 576px) {
+    .social{
+        justify-content: center;
+        width: 100%;
+        margin-right: 0px;
+    }
+}
 
 
+@media screen and (max-width: 576px) {
+    .social-icons a {
+        font-size: 20px;
+        
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-container_text {
+        margin-top: 150px; /*margen espacio entre el texto y el contenedor main*/
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-container button {
+        margin: 100px;
+        width: 130px;
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .nav-link input{
+        margin: 100px;
+        width: 80px;
+        font-size: 10px;
+        
+    }
+}

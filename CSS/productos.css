@@ -204,6 +204,7 @@ body{
 
 /*======SECCION PRODUCTOS========*/
 
+
 .products{
     padding: 20px 80px 40px; /*espacio entre la palabra productos y el contenedor productos
     20px arriba 80px a los lados y 40 px abajo */
@@ -283,4 +284,105 @@ footer p{
     
 }
 
+
+/* Ajustes para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Ajustes para dispositivos más pequeños */
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .social{
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .social-icons a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-link input{
+        margin: 100px;
+        width: 80px;
+        font-size: 10px;
+        
+    }
+}
+
+
+
+/*=========== SECCION PROMO ===========*/
+
+@media screen and (max-width: 576px) {
+    .productos-main{
+        display: grid;
+        justify-content: center;
+        width: 100%; /*ocupa el total del ancho de la pagina*/
+        margin-top: 250px; /*espacio entre el contenedor principal productos-main y el principo de la pagina*/
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .promo-content{
+        display: inline-block;
+        margin: 0px 0px 0px 200px;
+        
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .promo h1{    
+        text-align: center; /*centra el titulo en la mitad de cu contenedor*/
+        font-size: 20px;
+        border-bottom: 2px solid rgb(145, 145, 145);
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .promo-info{
+        grid-column: 2;/*pone el contenido del contenedor promo-info en la columna 2 del contenedor promo-content*/
+        margin: 0px 50px 0px 0px;
+    }    
+}
+
+@media screen and (max-width: 576px) {
+    .promo-info h2{
+        margin-top: 20px; /*muve el titulo del contenedor promo-info hacia 
+        abajo poniendole un margen de 20px arriba*/
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .promo-info ul{
+        margin: 30px 0px 30px 0px;;/*espacio de margen de la lista con respecto a su contenedor */
+
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .promo-content img{
+        grid-column: 1;/*envia la imagen a la columna 1*/
+        width: 85%; /*ocupa el 85% del contenedor promo-content*/
+        display: block;
+        margin: 0px 10px 0px 80px; /*le pone margen arriba y abajo de 30px y de 0 a los lados*/
+    }
+}
 
