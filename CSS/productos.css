@@ -337,7 +337,7 @@ footer p{
 @media screen and (max-width: 576px) {
     .promo-content{
         display: inline-block;
-        margin: 0px 0px 0px 200px;
+        width: 400px;
         
     }
 }
@@ -356,8 +356,7 @@ footer p{
 
 @media screen and (max-width: 576px) {
     .promo-info{
-        grid-column: 2;/*pone el contenido del contenedor promo-info en la columna 2 del contenedor promo-content*/
-        margin: 0px 50px 0px 0px;
+        margin: 0px 0px 0px 100px;
     }    
 }
 
